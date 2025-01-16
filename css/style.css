@@ -5,3 +5,27 @@
     --form: #BBBBBB;
     --btn: #FFFFFF;
 }
+
+
+.container{
+    width: 973px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+.header{
+    padding-top: 44px;
+    padding-bottom: 109px;
+}
+
+.main{
+    padding-bottom: 119px;
+}
+
+.footer{
+    background-color: var(--titles);
+
+    padding-top: 92px;
+    padding-bottom: 115px;
+}
