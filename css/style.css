@@ -6,6 +6,10 @@
     --btn: #FFFFFF;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
 
 .container{
     width: 973px;
@@ -14,13 +18,49 @@
 
 }
 
+
+
 .header{
     padding-top: 44px;
     padding-bottom: 109px;
 }
 
+.logo{
+    font-family: "Bilbo Swash Caps", serif;
+    color: var(--logo);
+}
+
+.nav{
+    padding-left: 291px;
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--logo);
+    width: 46px;
+    font-weight:300;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.nav a:first-child{
+    padding-right: 25px;
+}
+
+
 .main{
     padding-bottom: 119px;
+}
+
+.sect-name{
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    width: 223;
+    padding-left: 356px;
+    font-size: 40px;
 }
 
 .footer{
