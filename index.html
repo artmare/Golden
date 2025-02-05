@@ -10,14 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header container">
-      <h1 class="logo">Golden</h1>
-
+      
+      
       <nav class="nav">
+        <a class="logo">Golden</a>
         <a href="#" class="nav-item">Home</a>
         <a href="#" class="nav-item">Services</a>
         <a href="#" class="nav-item">Portfolio</a>
@@ -59,14 +62,15 @@
     <footer class="footer ">
       <section class="contact container">
         <form action="">
-          <input class="inp-contact" type="text" placeholder="Your name *" />
-          <input class="inp-contact" type="text" placeholder="Your E-Mail *" />
-          <input class="inp-contact" type="text" placeholder="Subject" />
+          <input class="inp-contact-name" type="text" placeholder="Your name *" />
+          <input class="inp-contact-mail" type="text" placeholder="Your E-Mail *" />
+          <input class="inp-contact-subject" type="text" placeholder="Subject" />
 
-          <input class="inp-contact" type="text" placeholder="Your Message *" />
+          <input class="inp-contact-message" type="text" placeholder="Your Message *" />
 
-          <button class="btn-send" type="submit">Send Message</button>
+          
         </form>
+        <button class="btn-send" type="submit">Send Message</button>
       </section>
     </footer>
   </body>

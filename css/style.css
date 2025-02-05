@@ -1,71 +1,115 @@
-:root{
-    --logo: #FED136;
-    --titles: #222222;
-    --text: #777777;
-    --form: #BBBBBB;
-    --btn: #FFFFFF;
+:root {
+  --logo: #fed136;
+  --titles: #222222;
+  --text: #777777;
+  --form: #bbbbbb;
+  --btn: #ffffff;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-    width: 973px;
-    padding: 0 15px;
-    margin: 0 auto;
-
+.container {
+  width: 973px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-
-
-.header{
-    padding-top: 44px;
-    padding-bottom: 109px;
+.header {
+  padding-top: 44px;
+  padding-bottom: 109px;
 }
 
-.logo{
-    font-family: "Bilbo Swash Caps", serif;
-    color: var(--logo);
+.nav {
+  display: flex;
 }
 
-.nav{
-    padding-left: 291px;
-    font-family: "Montserrat", serif;
-    text-transform: uppercase;
+.nav .logo {
+  padding-right: 275px;
 
+  color: #fed136;
+  text-align: center;
+  font-family: "Bilbo Swash Caps";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 41px; /* 113.889% */
+  letter-spacing: 1.3px;
 }
 
-.nav a{
-    text-decoration: none;
-    color: var(--logo);
-    width: 46px;
-    font-weight:300;
-    font-size: 14px;
-    padding-right: 10px;
+.nav-item {
+  
+
+  padding-right: 25px;
+  color: #fed136;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 41px; /* 292.857% */
+  text-transform: uppercase;
 }
 
-.nav a:first-child{
-    padding-right: 25px;
+.sect-name {
+  color: #222;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px; /* 187.5% */
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }
 
-
-.main{
-    padding-bottom: 119px;
+.services{
+  margin-bottom: 119px;
 }
 
-.sect-name{
-    font-family: "Montserrat", serif;
-    text-transform: uppercase;
-    width: 223;
-    padding-left: 356px;
-    font-size: 40px;
+.services-list {
+  display: flex;
 }
 
-.footer{
-    background-color: var(--titles);
+.services-items h3 {
+  color: #222;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px; /* 416.667% */
+  letter-spacing: -0.45px;
+}
 
-    padding-top: 92px;
-    padding-bottom: 115px;
+.services-items p {
+  color: #777;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.35px;
+}
+
+form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+
+  margin-bottom: 45px;
+}
+
+.inp-contact-name { grid-area: 1 / 1 / 2 / 2; }
+.inp-contact-mail { grid-area: 2 / 1 / 3 / 2; }
+.inp-contact-subject { grid-area: 3 / 1 / 4 / 2; }
+.inp-contact-message { grid-area: 1 / 2 / 4 / 3; }
+
+.btn-send{
+  margin-left: 383px;
 }
